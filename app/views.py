@@ -5,5 +5,5 @@ from  django.http import HttpResponse
 def home(request):
     return HttpResponse("<h1> hello Home </h1>")
 def home2(request):
-    homepage='homepage.html'
+    homepage='templates\\app\\homepage.html'
     return render(request,homepage,{})
