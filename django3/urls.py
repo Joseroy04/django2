@@ -18,5 +18,10 @@ from django.urls import path
 from app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",views.home2,name="home")
+    path("",views.home2,name="home"),
+    path("index/",views.index,name="index"),
+    path('clint/',views.client,name="clint"),
+    path('contact/',views.contact,name="contact"),
+    path('health/',views.health,name="health"),
+    path('news/', views.news ,name="news")
 ]
